@@ -1,4 +1,5 @@
-const apiKey = ;
+
+const apiKey = "849ff98095c0d7d62e387e1b49b4941f";
 const apiCountryURL = "https://countryflagsapi.com/png/";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 
