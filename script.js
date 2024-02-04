@@ -69,7 +69,7 @@ const showWeatherData = async (city) => {
     "src",
     `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`
   );
-  countryElement.setAttribute("src", apiCountryURL + data.sys.country);
+  countryElement.setAttribute("src", `https://flagsapi.com/${data.sys.country}/flat/64.png`);
   umidityElement.innerText = `${data.main.humidity}%`;
   windElement.innerText = `${data.wind.speed}km/h`;
 
