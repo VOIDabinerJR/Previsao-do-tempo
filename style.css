@@ -1,45 +1,50 @@
-*{
-    margin: 0;
+/* Geral */
+* {
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Ubuntu", sans-serif;   
-
-}
-
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
 body {
+    background: linear-gradient(180deg, rgba(89, 76, 238, 1) 0%, #8dd0f5 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vh;
-    background: linear-gradient(180deg, rgba(89, 76, 238, 1) 0%, #8dd0f5 100%);
-
-}
-
-.div01 {
-    
+  
+    background-position: center;
+    background-size: cover;
+  }
+  
+.hide {
+    display: none !important;
+  }
+  
+.container {
     background-color: #5c54ed;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+    max-width: 400px;
+  }
   
-     border-radius: 25px;
-     width: 50%;
-     max-width: 400px;
-     padding: 20px;
-
-}
-
-input {
+  /* Form */
+.form h3 {
+    margin-bottom: 1rem;
+  }
+  
+ .form-input-container {
+    display: flex;
+  }
+  
+.form input {
+    padding: 0.8rem;
     border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 24px;
-    font-size: 20px;
-    background-color: aliceblue;
-    color: black;
-    width: 80%
-}
-
-button {
+    flex: 1;
+    border-radius: 4px;
+  }
+.form button {
     padding: 0.8rem;
     min-width: 50px;
     margin-left: 8px;
@@ -48,37 +53,98 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    float: right;
-
-}
-
-img {
-    width: 25px;
-}
-.div02 {
+  }
+  
+  /* Clima */
+  #weather-data,
+  #error-message,
+  #loader,
+  #suggestions {
+    border-top: 1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+  
+  #weather-data h2 {
     display: flex;
-    margin-top: 30px;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.div03 {
-
+    margin-bottom: 0.6rem;
+  }
+  
+  #weather-data h2 i {
+    font-size: 1rem;
+  }
+  
+  #weather-data span {
+    margin: 0.6rem;
+  }
+  
+  #temperature {
+    font-size: 4rem;
+  }
+  
+  #country {
+    height: 15px;
+  }
+  
+  #description-container {
     display: flex;
-    margin-top: 30px;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.div04 {
-    display: inline-block;
-    margin-top: 30px;
+    margin: 0.6rem 0;
+  }
+  
+  #description {
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  
+  #details-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    
-
-}
-
-p {
-    display: inline-block;
-}
+  }
+  
+  #details-container #umidity {
+    border-right: 1px solid #fff;
+    margin: 0.6rem;
+    padding: 0.6rem;
+  }
+  
+  /* Loader */
+  #loader i {
+    animation: rotate 1.5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Sugestões */
+  #suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #suggestions button {
+    min-width: 150px;
+    margin: 0.8rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 10rem;
+    border: none;
+    background-color: #8dd0f5;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.4s;
+  }
+  
+  #suggestions button:hover {
+    opacity: 1;
+  }
