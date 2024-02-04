@@ -1,9 +1,9 @@
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Ubuntu", sans-serif;   
+
 }
 
 body {
@@ -11,77 +11,74 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Altura / vh - altura */
-    width: 100vw;
-    /*  vw - largura */
-    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    width: 100vh;
+    background: linear-gradient(180deg, rgba(89, 76, 238, 1) 0%, #8dd0f5 100%);
+
 }
 
-.corpo {
-    background-color: #000000;/*  Troca cor de fundo  */
-    width: 95%; /*  Largura  */
-    max-width: 420px; /*  Largura  Maxima */
-    opacity: 0.8;/* transparencia do item */
-    padding: 20px;
-    border-radius: 25px;
+.div01 {
+    
+    background-color: #5c54ed;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+     border-radius: 25px;
+     width: 50%;
+     max-width: 400px;
+     padding: 20px;
+
 }
 
 input {
-    border: none;/* borda do elemento */
-    outline: none;/* borda quando seleciona o elemento */
-    padding: 10px;/* espaçamento interno */
-    border-radius: 24px;/* arredonda as bordas */
-    font-size: 20px;
-    background-color: #7c7c7c2b;
-    color: #ffffff;
-    width: calc( 100% - 100px);
-}
-
-button {
     border: none;
     outline: none;
     padding: 10px;
-    border-radius: 50px;
-    background-color: #7c7c7c2b;
-    float: right;
+    border-radius: 24px;
+    font-size: 20px;
+    background-color: aliceblue;
+    color: black;
+    width: 80%
+}
+
+button {
+    padding: 0.8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color: #8dd0f5;
+    color: #fff;
+    border: none;
     cursor: pointer;
+    border-radius: 4px;
+    float: right;
+
 }
 
-button:hover {
-    background-color: #7c7c7c6b;
+img {
+    width: 25px;
 }
-
-.temperatura {
-    margin-top: 30px;
-}
-
-.caixa-menor {
+.div02 {
     display: flex;
     margin-top: 30px;
     align-items: center;
+    flex-direction: column;
 }
 
-.lupa {
-    height: 20px;
-}
+.div03 {
 
-h2 {
-    color: white;
-    font-size: 28px; /* tamanho do texto */
-}
-
-.temp {
-    color: #ffffff;
+    display: flex;
     margin-top: 30px;
+    align-items: center;
+    flex-direction: column;
 }
 
-.descricao {
-    color: #ffffff;
-    margin-left: 20px;
-    text-transform: capitalize; /* Deixa a primeira letra maiuscula*/
-}
-
-.umidade {
-    color: #ffffff;
+.div04 {
+    display: inline-block;
     margin-top: 30px;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+p {
+    display: inline-block;
 }
